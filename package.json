@@ -1,14 +1,43 @@
 {
   "name": "bubblegum-eink-theme",
   "displayName": "Bubblegum E-Ink Theme",
-  "description": "An e-ink like theme with pops of bubblegum color",
-  "version": "0.0.1",
+  "description": "A light, e-ink inspired theme with warm backgrounds and bubblegum accent colors. Easy on the eyes with lavender and pink syntax highlighting.",
+  "version": "1.0.0",
+  "publisher": "KirkByers",
+  "author": {
+    "name": "Kirk Byers"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.102.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "light theme",
+    "e-ink",
+    "bubblegum",
+    "lavender",
+    "pink",
+    "warm",
+    "easy on eyes",
+    "pastel",
+    "color theme"
+  ],
+  "galleryBanner": {
+    "color": "#eee8d5",
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirkbyers/bubblegum-eink-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/kirkbyers/bubblegum-eink-theme/issues"
+  },
+  "homepage": "https://github.com/kirkbyers/bubblegum-eink-theme#readme",
   "contributes": {
     "themes": [
       {
