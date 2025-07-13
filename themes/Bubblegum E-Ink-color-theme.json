@@ -17,9 +17,22 @@
 		"tab.activeBackground": "#eee8d5",
 		"tab.activeForeground": "#333333",
 		"tab.inactiveBackground": "#e6dac7",
-		"tab.inactiveForeground": "#666666",
+		"tab.inactiveForeground": "#8a6db3",
+		"tab.border": "#d9cbb0",
+		"tab.activeBorder": "#c8a2c8",
+		"editorGroupHeader.tabsBackground": "#d9cbb0",
 		"editorLineNumber.foreground": "#9c7fb8",
 		"editorLineNumber.activeForeground": "#8a6db3",
+		"editor.selectionBackground": "#f0e8f0",
+		"editor.selectionHighlightBackground": "#f5f0f5",
+		"editor.findMatchBackground": "#e8d5e8",
+		"editor.findMatchHighlightBackground": "#f0e8f0",
+		"editorWidget.background": "#e6dac7",
+		"editorWidget.border": "#d9cbb0",
+		"editorSuggestWidget.background": "#e6dac7",
+		"editorSuggestWidget.border": "#d9cbb0",
+		"editorHoverWidget.background": "#e6dac7",
+		"editorHoverWidget.border": "#d9cbb0",
         "list.activeSelectionIconForeground": "#fff"
 	},
 	"tokenColors": [
@@ -56,7 +69,7 @@
 			"name": "Invalid - Illegal",
 			"scope": "invalid.illegal",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "#9c4863"
 			}
 		},
 		{
@@ -134,7 +147,7 @@
 			"name": "Exceptions",
 			"scope": "entity.name.exception",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "#9c4863"
 			}
 		},
 		{
@@ -307,7 +320,7 @@
 			"name": "Markup: Error",
 			"scope": "markup.error",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "#9c4863"
 			}
 		},
 		{
@@ -359,7 +372,7 @@
 			"name": "Markup: Traceback",
 			"scope": "markup.traceback",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "#9c4863"
 			}
 		},
 		{
@@ -409,21 +422,21 @@
 				"meta.separator"
 			],
 			"settings": {
-				"foreground": "#434343"
+				"foreground": "#7a6693"
 			}
 		},
 		{
 			"name": "Extra: Diff From",
 			"scope": "meta.diff.header.from-file",
 			"settings": {
-				"foreground": "#434343"
+				"foreground": "#7a6693"
 			}
 		},
 		{
 			"name": "Extra: Diff To",
 			"scope": "meta.diff.header.to-file",
 			"settings": {
-				"foreground": "#434343"
+				"foreground": "#7a6693"
 			}
 		}
 	]
