@@ -1,0 +1,682 @@
+{
+  "schema_version": "1.0",
+  "metadata": {
+    "title": "User Management System Sample Data",
+    "description": "Comprehensive JSON sample file for testing the Bubblegum E-Ink theme with various data structures",
+    "created_at": "2024-01-15T10:30:00Z",
+    "created_by": "Theme Testing System",
+    "version": "2.1.0",
+    "last_updated": "2024-01-15T15:45:00Z",
+    "tags": ["sample", "users", "testing", "json", "theme"],
+    "license": "MIT"
+  },
+  "configuration": {
+    "api": {
+      "base_url": "https://api.example.com/v1",
+      "timeout": 30000,
+      "retry_attempts": 3,
+      "rate_limit": {
+        "requests_per_minute": 100,
+        "burst_limit": 20
+      }
+    },
+    "database": {
+      "host": "localhost",
+      "port": 5432,
+      "name": "user_management",
+      "ssl": true,
+      "pool_size": 10,
+      "connection_timeout": 5000
+    },
+    "features": {
+      "user_registration": true,
+      "email_verification": true,
+      "password_reset": true,
+      "two_factor_auth": false,
+      "social_login": {
+        "google": true,
+        "github": true,
+        "twitter": false
+      }
+    },
+    "security": {
+      "password_policy": {
+        "min_length": 8,
+        "require_uppercase": true,
+        "require_lowercase": true,
+        "require_numbers": true,
+        "require_special_chars": true,
+        "max_age_days": 90
+      },
+      "session": {
+        "timeout_minutes": 30,
+        "remember_me_days": 30,
+        "secure_cookies": true
+      }
+    }
+  },
+  "users": [
+    {
+      "id": 1,
+      "uuid": "550e8400-e29b-41d4-a716-446655440001",
+      "personal_info": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "full_name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123",
+        "date_of_birth": "1985-03-15",
+        "avatar_url": "https://example.com/avatars/john_doe.jpg"
+      },
+      "account": {
+        "username": "johndoe",
+        "role": "admin",
+        "status": "active",
+        "created_at": "2023-01-15T09:30:00Z",
+        "last_login": "2024-01-15T08:45:00Z",
+        "login_count": 247,
+        "email_verified": true,
+        "two_factor_enabled": true
+      },
+      "permissions": ["read", "write", "delete", "admin", "manage_users"],
+      "preferences": {
+        "theme": "dark",
+        "language": "en",
+        "timezone": "America/New_York",
+        "notifications": {
+          "email": {
+            "marketing": false,
+            "security": true,
+            "product_updates": true
+          },
+          "push": {
+            "enabled": true,
+            "sound": true,
+            "vibration": false
+          }
+        },
+        "privacy": {
+          "profile_visibility": "public",
+          "show_email": false,
+          "show_phone": false
+        }
+      },
+      "address": {
+        "street": "123 Main Street",
+        "unit": "Apt 4B",
+        "city": "New York",
+        "state": "NY",
+        "zip_code": "10001",
+        "country": "United States",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "social_links": {
+        "linkedin": "https://linkedin.com/in/johndoe",
+        "twitter": "@johndoe",
+        "github": "johndoe",
+        "website": "https://johndoe.dev"
+      },
+      "statistics": {
+        "projects_created": 15,
+        "tasks_completed": 234,
+        "files_uploaded": 89,
+        "comments_made": 156,
+        "reputation_score": 4.8
+      }
+    },
+    {
+      "id": 2,
+      "uuid": "550e8400-e29b-41d4-a716-446655440002",
+      "personal_info": {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "full_name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "phone": "+1-555-0124",
+        "date_of_birth": "1990-07-22",
+        "avatar_url": "https://example.com/avatars/jane_smith.jpg"
+      },
+      "account": {
+        "username": "janesmith",
+        "role": "user",
+        "status": "active",
+        "created_at": "2023-03-20T14:15:00Z",
+        "last_login": "2024-01-14T16:20:00Z",
+        "login_count": 89,
+        "email_verified": true,
+        "two_factor_enabled": false
+      },
+      "permissions": ["read", "write"],
+      "preferences": {
+        "theme": "light",
+        "language": "en",
+        "timezone": "America/Los_Angeles",
+        "notifications": {
+          "email": {
+            "marketing": true,
+            "security": true,
+            "product_updates": false
+          },
+          "push": {
+            "enabled": false,
+            "sound": false,
+            "vibration": false
+          }
+        },
+        "privacy": {
+          "profile_visibility": "friends",
+          "show_email": true,
+          "show_phone": false
+        }
+      },
+      "address": {
+        "street": "456 Oak Avenue",
+        "unit": null,
+        "city": "San Francisco",
+        "state": "CA",
+        "zip_code": "94102",
+        "country": "United States",
+        "coordinates": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        }
+      },
+      "social_links": {
+        "linkedin": "https://linkedin.com/in/janesmith",
+        "twitter": null,
+        "github": "jane-smith",
+        "website": null
+      },
+      "statistics": {
+        "projects_created": 8,
+        "tasks_completed": 156,
+        "files_uploaded": 43,
+        "comments_made": 78,
+        "reputation_score": 4.2
+      }
+    },
+    {
+      "id": 3,
+      "uuid": "550e8400-e29b-41d4-a716-446655440003",
+      "personal_info": {
+        "first_name": "Bob",
+        "last_name": "Johnson",
+        "full_name": "Bob Johnson",
+        "email": "bob.johnson@example.com",
+        "phone": "+1-555-0125",
+        "date_of_birth": "1988-11-08",
+        "avatar_url": null
+      },
+      "account": {
+        "username": "bobjohnson",
+        "role": "user",
+        "status": "pending",
+        "created_at": "2023-12-01T11:00:00Z",
+        "last_login": null,
+        "login_count": 0,
+        "email_verified": false,
+        "two_factor_enabled": false
+      },
+      "permissions": ["read"],
+      "preferences": {
+        "theme": "auto",
+        "language": "en",
+        "timezone": "America/Chicago",
+        "notifications": {
+          "email": {
+            "marketing": false,
+            "security": true,
+            "product_updates": true
+          },
+          "push": {
+            "enabled": true,
+            "sound": true,
+            "vibration": true
+          }
+        },
+        "privacy": {
+          "profile_visibility": "private",
+          "show_email": false,
+          "show_phone": false
+        }
+      },
+      "address": null,
+      "social_links": {},
+      "statistics": {
+        "projects_created": 0,
+        "tasks_completed": 0,
+        "files_uploaded": 0,
+        "comments_made": 0,
+        "reputation_score": 0.0
+      }
+    }
+  ],
+  "roles": [
+    {
+      "name": "admin",
+      "display_name": "Administrator",
+      "description": "Full system access with all permissions",
+      "permissions": ["read", "write", "delete", "admin", "manage_users", "manage_roles", "system_config"],
+      "color": "#dc3545",
+      "priority": 100
+    },
+    {
+      "name": "moderator",
+      "display_name": "Moderator",
+      "description": "Content moderation and user management",
+      "permissions": ["read", "write", "delete", "moderate_content", "manage_users"],
+      "color": "#fd7e14",
+      "priority": 75
+    },
+    {
+      "name": "user",
+      "display_name": "User",
+      "description": "Standard user with basic permissions",
+      "permissions": ["read", "write"],
+      "color": "#198754",
+      "priority": 50
+    },
+    {
+      "name": "guest",
+      "display_name": "Guest",
+      "description": "Limited read-only access",
+      "permissions": ["read"],
+      "color": "#6c757d",
+      "priority": 25
+    }
+  ],
+  "permissions": {
+    "read": {
+      "name": "Read",
+      "description": "View content and data",
+      "category": "basic"
+    },
+    "write": {
+      "name": "Write",
+      "description": "Create and edit content",
+      "category": "basic"
+    },
+    "delete": {
+      "name": "Delete",
+      "description": "Remove content and data",
+      "category": "advanced"
+    },
+    "admin": {
+      "name": "Admin",
+      "description": "Administrative access",
+      "category": "system"
+    },
+    "manage_users": {
+      "name": "Manage Users",
+      "description": "Create, edit, and delete user accounts",
+      "category": "user_management"
+    },
+    "manage_roles": {
+      "name": "Manage Roles",
+      "description": "Create and modify user roles",
+      "category": "user_management"
+    },
+    "moderate_content": {
+      "name": "Moderate Content",
+      "description": "Review and moderate user-generated content",
+      "category": "moderation"
+    },
+    "system_config": {
+      "name": "System Configuration",
+      "description": "Modify system settings and configuration",
+      "category": "system"
+    }
+  },
+  "statistics": {
+    "overview": {
+      "total_users": 3,
+      "active_users": 2,
+      "pending_users": 1,
+      "verified_emails": 2,
+      "two_factor_enabled": 1
+    },
+    "by_role": {
+      "admin": 1,
+      "user": 2,
+      "moderator": 0,
+      "guest": 0
+    },
+    "by_status": {
+      "active": 2,
+      "inactive": 0,
+      "pending": 1,
+      "suspended": 0
+    },
+    "geographical": {
+      "countries": {
+        "United States": 3
+      },
+      "states": {
+        "NY": 1,
+        "CA": 1,
+        "Unknown": 1
+      },
+      "cities": {
+        "New York": 1,
+        "San Francisco": 1,
+        "Unknown": 1
+      }
+    },
+    "activity": {
+      "total_logins": 336,
+      "average_logins_per_user": 112,
+      "last_30_days": {
+        "new_registrations": 1,
+        "active_users": 2,
+        "login_events": 45
+      }
+    }
+  },
+  "system_info": {
+    "environment": "production",
+    "version": "2.1.0",
+    "build": "2024.01.15.001",
+    "uptime": 2592000,
+    "database": {
+      "type": "PostgreSQL",
+      "version": "15.3",
+      "size_mb": 1024,
+      "tables": 15,
+      "indexes": 47
+    },
+    "server": {
+      "hostname": "app-server-01",
+      "os": "Ubuntu 22.04 LTS",
+      "cpu_cores": 8,
+      "memory_gb": 32,
+      "disk_space_gb": 500
+    },
+    "features": {
+      "caching": {
+        "enabled": true,
+        "type": "Redis",
+        "hit_rate": 94.5
+      },
+      "search": {
+        "enabled": true,
+        "type": "Elasticsearch",
+        "indexes": 5,
+        "documents": 10247
+      },
+      "monitoring": {
+        "enabled": true,
+        "uptime_percentage": 99.98,
+        "average_response_time_ms": 125
+      }
+    }
+  },
+  "api_endpoints": {
+    "users": {
+      "list": {
+        "method": "GET",
+        "path": "/api/v1/users",
+        "description": "Get paginated list of users",
+        "parameters": {
+          "page": {
+            "type": "integer",
+            "default": 1,
+            "description": "Page number"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 20,
+            "max": 100,
+            "description": "Number of users per page"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["admin", "moderator", "user", "guest"],
+            "description": "Filter by user role"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["active", "inactive", "pending", "suspended"],
+            "description": "Filter by user status"
+          }
+        }
+      },
+      "create": {
+        "method": "POST",
+        "path": "/api/v1/users",
+        "description": "Create a new user",
+        "required_fields": ["first_name", "last_name", "email", "password"],
+        "optional_fields": ["phone", "role", "preferences"]
+      },
+      "get": {
+        "method": "GET",
+        "path": "/api/v1/users/{id}",
+        "description": "Get user by ID",
+        "parameters": {
+          "id": {
+            "type": "integer",
+            "description": "User ID"
+          }
+        }
+      },
+      "update": {
+        "method": "PUT",
+        "path": "/api/v1/users/{id}",
+        "description": "Update user information",
+        "updatable_fields": ["first_name", "last_name", "phone", "preferences", "address"]
+      },
+      "delete": {
+        "method": "DELETE",
+        "path": "/api/v1/users/{id}",
+        "description": "Delete user account"
+      }
+    },
+    "authentication": {
+      "login": {
+        "method": "POST",
+        "path": "/api/v1/auth/login",
+        "description": "Authenticate user",
+        "required_fields": ["email", "password"],
+        "optional_fields": ["remember_me"]
+      },
+      "logout": {
+        "method": "POST",
+        "path": "/api/v1/auth/logout",
+        "description": "End user session"
+      },
+      "refresh": {
+        "method": "POST",
+        "path": "/api/v1/auth/refresh",
+        "description": "Refresh authentication token"
+      }
+    }
+  },
+  "validation_rules": {
+    "user": {
+      "first_name": {
+        "required": true,
+        "min_length": 1,
+        "max_length": 50,
+        "pattern": "^[a-zA-Z\\s-']+$"
+      },
+      "last_name": {
+        "required": true,
+        "min_length": 1,
+        "max_length": 50,
+        "pattern": "^[a-zA-Z\\s-']+$"
+      },
+      "email": {
+        "required": true,
+        "format": "email",
+        "max_length": 255,
+        "unique": true
+      },
+      "phone": {
+        "required": false,
+        "pattern": "^\\+?[1-9]\\d{1,14}$",
+        "format": "E.164"
+      },
+      "password": {
+        "required": true,
+        "min_length": 8,
+        "max_length": 128,
+        "require_uppercase": true,
+        "require_lowercase": true,
+        "require_numbers": true,
+        "require_special_chars": true
+      }
+    }
+  },
+  "error_codes": {
+    "1000": {
+      "code": "USER_NOT_FOUND",
+      "message": "User with specified ID was not found",
+      "http_status": 404
+    },
+    "1001": {
+      "code": "INVALID_CREDENTIALS",
+      "message": "Invalid email or password",
+      "http_status": 401
+    },
+    "1002": {
+      "code": "EMAIL_ALREADY_EXISTS",
+      "message": "A user with this email address already exists",
+      "http_status": 409
+    },
+    "1003": {
+      "code": "VALIDATION_ERROR",
+      "message": "One or more fields failed validation",
+      "http_status": 400
+    },
+    "1004": {
+      "code": "INSUFFICIENT_PERMISSIONS",
+      "message": "User does not have required permissions",
+      "http_status": 403
+    },
+    "1005": {
+      "code": "ACCOUNT_SUSPENDED",
+      "message": "User account has been suspended",
+      "http_status": 403
+    },
+    "1006": {
+      "code": "EMAIL_NOT_VERIFIED",
+      "message": "Email address must be verified before proceeding",
+      "http_status": 403
+    }
+  },
+  "sample_responses": {
+    "user_list_success": {
+      "status": "success",
+      "data": {
+        "users": "/* Array of user objects */",
+        "pagination": {
+          "current_page": 1,
+          "total_pages": 5,
+          "total_items": 97,
+          "items_per_page": 20
+        }
+      },
+      "message": "Users retrieved successfully"
+    },
+    "user_create_success": {
+      "status": "success",
+      "data": {
+        "user": "/* User object */",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+      },
+      "message": "User created successfully"
+    },
+    "validation_error": {
+      "status": "error",
+      "error": {
+        "code": 1003,
+        "message": "Validation failed",
+        "details": {
+          "email": ["Email address is required", "Email format is invalid"],
+          "password": ["Password must be at least 8 characters long"]
+        }
+      }
+    },
+    "authentication_error": {
+      "status": "error",
+      "error": {
+        "code": 1001,
+        "message": "Invalid credentials",
+        "details": "The provided email and password combination is incorrect"
+      }
+    }
+  },
+  "localization": {
+    "supported_languages": ["en", "es", "fr", "de", "it", "pt", "ja", "ko", "zh"],
+    "default_language": "en",
+    "messages": {
+      "en": {
+        "welcome": "Welcome to the User Management System",
+        "login_success": "Login successful",
+        "logout_success": "Logout successful",
+        "user_created": "User account created successfully",
+        "user_updated": "User information updated successfully",
+        "user_deleted": "User account deleted successfully",
+        "email_verified": "Email address verified successfully",
+        "password_reset": "Password reset email sent",
+        "invalid_credentials": "Invalid email or password",
+        "account_suspended": "Your account has been suspended",
+        "insufficient_permissions": "You don't have permission to perform this action"
+      },
+      "es": {
+        "welcome": "Bienvenido al Sistema de Gestión de Usuarios",
+        "login_success": "Inicio de sesión exitoso",
+        "logout_success": "Cierre de sesión exitoso",
+        "user_created": "Cuenta de usuario creada exitosamente",
+        "user_updated": "Información de usuario actualizada exitosamente",
+        "user_deleted": "Cuenta de usuario eliminada exitosamente",
+        "email_verified": "Dirección de correo electrónico verificada exitosamente",
+        "password_reset": "Correo de restablecimiento de contraseña enviado",
+        "invalid_credentials": "Correo electrónico o contraseña inválidos",
+        "account_suspended": "Su cuenta ha sido suspendida",
+        "insufficient_permissions": "No tienes permisos para realizar esta acción"
+      }
+    }
+  },
+  "test_data": {
+    "valid_emails": [
+      "user@example.com",
+      "test.email+tag@domain.co.uk",
+      "user.name123@sub.domain.org",
+      "simple@domain.com"
+    ],
+    "invalid_emails": [
+      "invalid-email",
+      "@domain.com",
+      "user@",
+      "user..name@domain.com",
+      "user@domain",
+      ""
+    ],
+    "sample_passwords": {
+      "strong": [
+        "MySecureP@ssw0rd!",
+        "C0mpl3x&S3cur3!",
+        "Str0ng#P@ssw0rd2024"
+      ],
+      "weak": [
+        "password",
+        "123456",
+        "qwerty",
+        "admin"
+      ]
+    },
+    "sample_names": [
+      "John Doe",
+      "Jane Smith",
+      "Alice Johnson",
+      "Bob Williams",
+      "Carol Brown",
+      "David Davis",
+      "Emma Wilson",
+      "Frank Miller"
+    ]
+  }
+}

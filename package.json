@@ -1,0 +1,21 @@
+{
+  "name": "bubblegum-eink-theme",
+  "displayName": "Bubblegum E-Ink Theme",
+  "description": "An e-ink like theme with pops of bubblegum color",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Bubblegum E-Ink",
+        "uiTheme": "vs",
+        "path": "./themes/Bubblegum E-Ink-color-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample HTML file for testing the Bubblegum E-Ink theme">
+    <meta name="keywords" content="html, css, javascript, theme, testing">
+    <meta name="author" content="Theme Developer">
+    
+    <title>HTML Sample - Bubblegum E-Ink Theme Test</title>
+    
+    <!-- External stylesheets and fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="./sample.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Meta tags for social media -->
+    <meta property="og:title" content="HTML Sample Page">
+    <meta property="og:description" content="A comprehensive HTML sample for theme testing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/sample.html">
+    
+    <!-- Inline styles for demonstration -->
+    <style>
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .code-snippet {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header class="main-header" role="banner">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="#home" class="logo">
+                    <img src="logo.svg" alt="Company Logo" width="120" height="40">
+                </a>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none">
+                    <a href="#home" role="menuitem" class="nav-link active">Home</a>
+                </li>
+                <li role="none">
+                    <a href="#about" role="menuitem" class="nav-link">About</a>
+                </li>
+                <li role="none">
+                    <a href="#services" role="menuitem" class="nav-link">Services</a>
+                </li>
+                <li role="none">
+                    <a href="#contact" role="menuitem" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content" role="main">
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1 class="hero-title">
+                    Welcome to <span class="highlight">HTML Testing</span>
+                </h1>
+                <p class="hero-subtitle">
+                    This page demonstrates various HTML elements and attributes 
+                    for comprehensive theme testing.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="showAlert()">
+                        Get Started
+                    </button>
+                    <a href="#features" class="btn btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section with various HTML elements -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2>HTML Elements Showcase</h2>
+                
+                <!-- Typography examples -->
+                <article class="feature-card">
+                    <h3>Typography & Text Elements</h3>
+                    <p>This paragraph contains <strong>bold text</strong>, <em>italic text</em>, 
+                    <mark>highlighted text</mark>, <del>deleted text</del>, and 
+                    <ins>inserted text</ins>.</p>
+                    
+                    <blockquote cite="https://example.com">
+                        <p>"This is a blockquote element that demonstrates how quoted content 
+                        appears in the theme."</p>
+                        <footer>— <cite>Famous Developer</cite></footer>
+                    </blockquote>
+                    
+                    <p>Here's some <code class="inline-code">inline code</code> and a 
+                    <kbd>Ctrl+C</kbd> keyboard shortcut.</p>
+                    
+                    <pre class="code-snippet"><code>function example() {
+    console.log("This is a code block");
+    return "Hello, World!";
+}</code></pre>
+                </article>
+
+                <!-- Lists and navigation -->
+                <article class="feature-card">
+                    <h3>Lists & Navigation</h3>
+                    
+                    <h4>Unordered List:</h4>
+                    <ul>
+                        <li>First item with <a href="#link1">a link</a></li>
+                        <li>Second item
+                            <ul>
+                                <li>Nested item 1</li>
+                                <li>Nested item 2</li>
+                            </ul>
+                        </li>
+                        <li>Third item</li>
+                    </ul>
+                    
+                    <h4>Ordered List:</h4>
+                    <ol start="5">
+                        <li>Fifth item</li>
+                        <li>Sixth item</li>
+                        <li>Seventh item</li>
+                    </ol>
+                    
+                    <h4>Definition List:</h4>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>HyperText Markup Language</dd>
+                        <dt>CSS</dt>
+                        <dd>Cascading Style Sheets</dd>
+                        <dt>JavaScript</dt>
+                        <dd>A programming language for web development</dd>
+                    </dl>
+                </article>
+
+                <!-- Forms and inputs -->
+                <article class="feature-card">
+                    <h3>Forms & Input Elements</h3>
+                    
+                    <form class="sample-form" action="#" method="post" novalidate>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            
+                            <div class="form-group">
+                                <label for="fullname">Full Name *</label>
+                                <input type="text" id="fullname" name="fullname" required 
+                                       placeholder="Enter your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required 
+                                       placeholder="user@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" 
+                                       placeholder="+1 (555) 123-4567">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="birthdate">Birth Date</label>
+                                <input type="date" id="birthdate" name="birthdate">
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Preferences</legend>
+                            
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="">Select a country</option>
+                                    <option value="us">United States</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="au">Australia</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bio">Biography</label>
+                                <textarea id="bio" name="bio" rows="4" cols="50" 
+                                         placeholder="Tell us about yourself..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="preferences" value="newsletter">
+                                <label for="newsletter">Subscribe to newsletter</label>
+                            </div>
+                            
+                            <div class="form-group radio-group">
+                                <span class="group-label">Preferred contact method:</span>
+                                <div class="radio-options">
+                                    <input type="radio" id="contact-email" name="contact" value="email" checked>
+                                    <label for="contact-email">Email</label>
+                                    
+                                    <input type="radio" id="contact-phone" name="contact" value="phone">
+                                    <label for="contact-phone">Phone</label>
+                                    
+                                    <input type="radio" id="contact-mail" name="contact" value="mail">
+                                    <label for="contact-mail">Mail</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="file-upload">Upload Avatar</label>
+                                <input type="file" id="file-upload" name="avatar" 
+                                       accept="image/*" multiple>
+                            </div>
+                            
+                            <div class="form-group range-group">
+                                <label for="experience">Years of Experience: <span id="exp-value">5</span></label>
+                                <input type="range" id="experience" name="experience" 
+                                       min="0" max="20" value="5" step="1"
+                                       oninput="document.getElementById('exp-value').textContent = this.value">
+                            </div>
+                        </fieldset>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit Form</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                            <input type="button" value="Cancel" class="btn btn-outline">
+                        </div>
+                    </form>
+                </article>
+
+                <!-- Tables and data -->
+                <article class="feature-card">
+                    <h3>Tables & Data</h3>
+                    
+                    <table class="data-table">
+                        <caption>Sample User Data</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>john@example.com</td>
+                                <td>Admin</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button class="btn-small">Edit</button>
+                                    <button class="btn-small btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jane Smith</td>
+                                <td>jane@example.com</td>
+                                <td>User</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>
+                                    <button class="btn-small">Edit</button>
+                                    <button class="btn-small btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Bob Johnson</td>
+                                <td>bob@example.com</td>
+                                <td>User</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                                <td>
+                                    <button class="btn-small">Edit</button>
+                                    <button class="btn-small btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="6">Total: 3 users</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+
+                <!-- Media elements -->
+                <article class="feature-card">
+                    <h3>Media Elements</h3>
+                    
+                    <figure>
+                        <img src="https://via.placeholder.com/400x200/4B83CD/ffffff?text=Sample+Image" 
+                             alt="A sample placeholder image for theme testing" 
+                             loading="lazy">
+                        <figcaption>This is a sample image with a caption</figcaption>
+                    </figure>
+                    
+                    <details>
+                        <summary>Audio Element (Click to expand)</summary>
+                        <audio controls preload="none">
+                            <source src="sample.mp3" type="audio/mpeg">
+                            <source src="sample.ogg" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </details>
+                    
+                    <details>
+                        <summary>Video Element (Click to expand)</summary>
+                        <video controls width="400" height="225" poster="video-poster.jpg">
+                            <source src="sample.mp4" type="video/mp4">
+                            <source src="sample.webm" type="video/webm">
+                            <track kind="subtitles" src="subtitles.vtt" srclang="en" label="English">
+                            Your browser does not support the video element.
+                        </video>
+                    </details>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar with additional elements -->
+    <aside class="sidebar" role="complementary">
+        <h2>Additional Elements</h2>
+        
+        <section class="widget">
+            <h3>Progress Indicators</h3>
+            <div class="progress-group">
+                <label for="progress1">Loading Progress:</label>
+                <progress id="progress1" value="75" max="100">75%</progress>
+            </div>
+            
+            <div class="progress-group">
+                <label for="meter1">Disk Usage:</label>
+                <meter id="meter1" value="0.6" min="0" max="1" optimum="0.5">60%</meter>
+            </div>
+        </section>
+        
+        <section class="widget">
+            <h3>Interactive Elements</h3>
+            <p>Click the button below to test JavaScript interaction:</p>
+            <button onclick="toggleContent()" class="btn btn-outline" id="toggle-btn">
+                Show Hidden Content
+            </button>
+            <div id="hidden-content" style="display: none;">
+                <p>This content was hidden and is now visible!</p>
+            </div>
+        </section>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About This Page</h4>
+                    <p>This HTML sample file demonstrates various HTML5 elements and attributes 
+                    for comprehensive theme testing purposes.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <address>
+                        <p>Email: <a href="mailto:test@example.com">test@example.com</a></p>
+                        <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                        <p>Address: 123 Test Street, Example City, EC 12345</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 HTML Sample Page. All rights reserved.</p>
+                <p>
+                    <small>
+                        This page uses semantic HTML5 elements for better accessibility and SEO.
+                        <time datetime="2024-01-01">Last updated: January 1, 2024</time>
+                    </small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Sample JavaScript functions for theme testing
+        function showAlert() {
+            alert('Hello from the sample HTML page!');
+        }
+        
+        function toggleContent() {
+            const content = document.getElementById('hidden-content');
+            const button = document.getElementById('toggle-btn');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                button.textContent = 'Hide Content';
+            } else {
+                content.style.display = 'none';
+                button.textContent = 'Show Hidden Content';
+            }
+        }
+        
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            this.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+        });
+        
+        // Form validation example
+        document.querySelector('.sample-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            console.log('Form submitted with data:', Object.fromEntries(formData));
+            alert('Form submitted successfully! (Check console for data)');
+        });
+    </script>
+</body>
+</html>
